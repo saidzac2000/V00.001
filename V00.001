@@ -1,7 +1,7 @@
 // Variable
 var body = document.querySelector("body");
 // Functions
-function Write(element, write, size, color, align) {
+export function Write(element, write, size, color, align) {
   // V00.001
   var text = document.createElement(element);
   text.textContent = write;
