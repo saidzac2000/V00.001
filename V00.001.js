@@ -1,14 +1,14 @@
 // Variable
-var body = document.querySelector("body");
 // Functions
-function Write({
+export function Write({
     element, 
     write, 
     size, 
     color, 
     align, 
     font, 
-    display
+    display,
+    parentnode
 }) {
   // V0.01
   var text = document.createElement(element);
@@ -19,7 +19,7 @@ function Write({
   text.style.textAlign = align;
   text.style.fontFamily = font;
   text.style.display = display; 
-  body.appendChild(text);
+  parentnode.appendChild(text);
 }
 
 Write({
